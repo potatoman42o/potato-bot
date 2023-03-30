@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html class="scroll-smooth bg-black" lang=en>
+  <head>
+    <meta charset=UTF-8>
+    <meta content="width=device-width" name=viewport>
+    <link href=/assets/images/svg/logo.svg rel=icon type=image/svg+xml>
+    <meta content="Astro v1.6.3" name=generator>
+    <title>Sirius</title>
+    <link href=/assets/index.bae962f0.css rel=stylesheet />
+    <script type=module>
+      const d = document.getElementById("navBar"),
+        b = document.getElementById("logo"),
+        g = document.getElementById("link1"),
+        E = document.getElementById("button1"),
+        h = {
+          root: null,
+          rootMargin: "1px",
+          threshold: 1
+        },
+        L = new IntersectionObserver(((e, t) => {
+          e.forEach((e => {
+            e.isIntersecting && (d.classList.remove("opacity-0"), b.classList.remove("opacity-0"), g.classList.remove("opacity-0"), E.classList.remove("opacity-0"))
+          })), setTimeout((() => {
+            d.classList.remove("transition-all")
+          }), 2e3)
+        }), h);
+      L.observe(d);
+      const I = document.getElementById("hero"),
+        f = document.getElementById("hero2scroll"),
+        B = document.getElementById("featureList"),
+        e = document.getElementById("blob1"),
+        t = document.getElementById("blob2"),
+        m = {
+          root: null,
+          rootMargin: "0px",
+          threshold: .5
+        },
+        p = new IntersectionObserver((s => {
+          s.forEach((s => {
+            s.isIntersecting && (e.style.transform = "translateY(-50%) translateX(-50%)", e.style.top = "50%", e.style.left = "50%", e.style.backgroundColor = "#4F46E5", t.style.transform = "translateY(50%) translateX(50%)", t.style.bottom = "40%", t.style.right = "40%", t.style.backgroundColor = "#EF4444")
+          }))
+        }), m),
+        x = new IntersectionObserver((s => {
+          s.forEach((s => {
+            s.isIntersecting && (p.observe(I), e.style.transform = "translateY(100%) translateX(0%)", e.style.top = "50%", e.style.left = "50%", e.style.backgroundColor = "#44403c", t.style.transform = "translateY(110%) translateX(-80%)", t.style.bottom = "40%", t.style.right = "40%", t.style.backgroundColor = "#64748b")
+          }))
+        }), m);
+      x.observe(f);
+      const k = new IntersectionObserver((s => {
+        s.forEach((s => {
+          s.isIntersecting && (e.style.transform = "translateY(220%) translateX(-100%)", e.style.top = "50%", e.style.left = "50%", e.style.backgroundColor = "#14532d", t.style.transform = "translateY(500%) translateX(150%)", t.style.bottom = "40%", t.style.right = "40%", t.style.backgroundColor = "#581c87")
+        }))
+      }), m);
+      k.observe(B), window.addEventListener("DOMContentLoaded", (() => {
+        const e = document.getElementById("video");
+        document.querySelector("#video video").addEventListener("ended", (() => {
+          e.remove();
+          const t = document.getElementById("title"),
+            s = document.getElementById("titleP"),
+            o = document.getElementById("downButton"),
+            l = document.getElementById("navBar"),
+            r = document.querySelectorAll(".blobs");
+          t.classList.remove("opacity-0", "scale-150"), s.classList.remove("!opacity-0", "scale-150"), o.classList.remove("opacity-0", "scale-150"), l.classList.remove("-translate-y-full", "opacity-0"), r[0].style.transform = "translateY(-50%) translateX(-50%)", r[0].style.top = "50%", r[0].style.left = "50%", r[0].style.backgroundColor = "#4F46E5", r[1].style.transform = "translateY(50%) translateX(50%)", r[1].style.bottom = "40%", r[1].style.right = "40%", r[1].style.backgroundColor = "#EF4444", r.forEach((e => {
+            e.style.scale = "1", e.style.opacity = "1"
+          })), setTimeout((() => {
+            r[0].classList.add("animate-pulse-subtle"), r[1].classList.add("animate-pulse-subtle-delayed"), o.classList.remove("delay-1000", "duration-1000"), o.classList.add("duration-500")
+          }), 1e3), setTimeout((() => {
+            l.classList.remove("duration-1000", "delay-[2s]", "transition-all", "ease-in-out"), l.classList.add("transition-[background-color_0.5s_cubic-bezier(0.28,0.11,0.32,1)_0s]");
+            const e = document.getElementById("hero2scroll"),
+              t = document.getElementById("featureList");
+            document.querySelector("footer"), e.classList.remove("max-lg:hidden"), t.classList.remove("max-lg:hidden"), t.classList.remove("max-lg:hidden")
+          }), 3e3)
+        }))
+      }));
+      const u = document.getElementById("hero2"),
+        w = document.getElementById("hero2scroll"),
+        C = document.getElementById("h1Main"),
+        i = document.getElementById("revolutionary"),
+        X = {
+          root: null,
+          rootMargin: "0px",
+          threshold: .3
+        },
+        Y = new IntersectionObserver((e => {
+          e.forEach((e => {
+            e.isIntersecting && (u.classList.remove("opacity-0", "blur-xl"), w.classList.remove("blur-xl"), i.classList.add("-skew-x-12", "text-white", "!text-4xl", "sm:!text-6xl", "md:!text-7xl"), i.classList.remove("scale-0"), setTimeout((() => {
+              C.classList.add("text-slate-500"), i.classList.remove("text-slate-500", "text-sm")
+            }), 1e3))
+          }))
+        }), X);
+      Y.observe(u)
+    </script>
+    <script type=module src=/page.5a6f3db5.js></script>
+  </head>
+  <body>
+    <nav class="transition-all ease-in-out opacity-0 -translate-y-full backdrop-blur-[10px] bg-[rgba(15,15,15,0.9)] delay-300 duration-700 fixed h-14 left-0 px-4 saturate-[180%] shadow-[0_1px_0_0_#ffffff3d] top-0 w-full z-50" id=navBar>
+      <div class="flex items-center h-full w-full duration-700 ease-in-outmdelay-200 flex-wrap justify-between max-w-screen-xl mx-auto opacity-0" id=logo>
+        <a class="flex items-center cursor-default" href=/>
+          <img alt="Sirius Logo" class="h-6 mr-3 sm:h-8" src=/assets/images/svg/logo.svg>
+        </a>
+        <div class="flex items-center [line-height:1.33337] gap-4 lg:order-2 text-xs">
+          <div class="flex items-center duration-700 opacity-0 delay-500 ease-in-out gap-1" id=link1>
+            <a class="text-white hover:text-[#2997ff]" href=https://discord.gg/sirius target=_blank>
+              <svg class="h-4 w-4 inline-block whitespace-nowrap" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=currentColor role=img>
+                <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"></path>
+              </svg>
+            </a>
+          </div>
+          <button class="text-white text-center delay-1000 ease-in-out opacity-0 [letter-spacing:-0.01em] bg-[#6e6e73] border-0 cursor-pointer duration-700 font-normal inline-block min-w-[23px] outline-0 px-[11px] py-1 rounded-xl whitespace-nowrap" id=button1>Get Started</button>
+        </div>
+        <div class="hidden items-center justify-between lg:flex lg:order-1 lg:w-auto w-full" id=mobile-menu-2></div>
+      </div>
+    </nav>
+    <!-- <div class="absolute overflow-hidden h-full w-full"> -->
+    <!-- blurred frosted blob 1 purple/blue -->
+    <div class="transition-all duration-1000 ease-in-out rounded-full absolute blobs blur-[80px] overflow-hidden saturate-200 h-[700px] w-[700px]" id=blob1 style=scale:1.5;opacity:0></div>
+    <!-- blurred frosted blob 2 red-->
+    <div class="transition-all duration-1000 ease-in-out rounded-full absolute blobs blur-[80px] overflow-hidden saturate-200 h-[600px] w-[600px]" id=blob2 style=scale:1.5;opacity:0></div>
+    <!-- </div> -->
+    <section class="relative h-screen overflow-hidden w-full" id=hero>
+      <!-- center div -->
+      <!-- Display a video as a site splash and remove it once it ends -->
+      <div class="flex items-center h-full justify-center w-full absolute align-middle bg-black left-0 top-0 z-50" id=video>
+        <video autoplay class="lazy h-32 object-center object-contain w-32" muted playsinline>
+          <source data-src=/assets/videos/siriusIntro.webm type=video/webm class="h-5 w-5">
+          <source data-src=/assets/videos/siriusIntro.mp4 type=video/mp4 class="h-5 w-5">
+        </video>
+      </div>
+      <div class="flex items-center h-full justify-center flex-col relative z-10">
+        <h1 class="text-white duration-1000 transition-all ease-in-out scale-150 opacity-0 delay-500 font-extrabold text-8xl" id=title>Sirius</h1>
+        <p class="text-white duration-1000 transition-all ease-in-out scale-150 !opacity-0 delay-700 opacity-70 text-2xl" id=titleP>Bleeding. Edge.</p>
+      </div>
+      <div class="flex justify-center w-full absolute -translate-x-1/2 bottom-10 left-1/2 transform z-40">
+        <button class="text-sm text-white font-medium items-center text-center animate-bounce border-4 border-opacity-0 border-white delay-1000 duration-1000 ease-in-out hover:border-opacity-50 hover:text-opacity-50 opacity-0 p-2.5 rounded-full scale-150 transition-all" type=button onclick=scrollToHero2() id=downButton>
+          <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=3>
+            <path d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" stroke-linecap=round stroke-linejoin=round></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", (function() {
+        var e = [].slice.call(document.querySelectorAll("video.lazy"));
+        if ("IntersectionObserver" in window) {
+          var t = new IntersectionObserver((function(e, r) {
+            e.forEach((function(e) {
+              if (e.isIntersecting) {
+                for (var r in e.target.children) {
+                  var n = e.target.children[r];
+                  "string" == typeof n.tagName && "SOURCE" === n.tagName && (n.src = n.dataset.src)
+                }
+                e.target.load(), e.target.classList.remove("lazy"), t.unobserve(e.target)
+              }
+            }))
+          }));
+          e.forEach((function(e) {
+            t.observe(e)
+          }))
+        }
+      }))
+    </script>
+    <script>
+      function scrollToHero2() {
+        document.getElementById("hero2scroll").scrollIntoView({
+          behavior: "smooth"
+        })
+      }
+    </script>
+    <section class="h-full w-full [transition:_500ms_filter_ease-in-out] blur-xl max-lg:hidden relative z-0" id=hero2scroll>
+      <div class="transition-all bg-cover bg-no-repeat blur-xl h-screen opacity-0 relative z-20" id=hero2>
+        <div class="flex items-center h-full justify-center w-full">
+          <div class="mx-auto max-w-screen-2xl md:px-8 px-4">
+            <section class="flex flex-col gap-6 justify-between lg:flex-row md:gap-16 sm:gap-10">
+              <!-- content - start -->
+              <div class="flex justify-center flex-col lg:py-12 lg:text-left sm:text-center xl:py-24 xl:w-5/12">
+                <div class="flex gap-1 font-semibold mb-4 md:mb-6 md:text-lg text-gray-400 xl:text-xl">
+                  <p class="text-gray-400 md:text-lg xl:text-xl font-semibold inline-flex">Very proud to introduce</p>
+                  <div class="gap-1 items-center inline-flex">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg version=1.1 x=0px xml:space=preserve xmlns:xlink=http://www.w3.org/1999/xlink y=0px>
+                      <path d="M5.6,19.3c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3c0,0,0,0,0,0c-0.3,0-0.5-0.1-0.7-0.3l-3.7-3.7 C0.1,16.2,0,15.9,0,15.7c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3l3.7,3.7C5.5,18.8,5.6,19.1,5.6,19.3z" fill=currentColor></path>
+                      <path d="M9.3,15.7c0,0.1,0,0.3-0.1,0.4c0,0.1-0.1,0.2-0.2,0.3c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3L0.3,9 c-0.4-0.4-0.4-1,0-1.4C0.5,7.4,0.7,7.3,1,7.3c0.3,0,0.5,0.1,0.7,0.3L9,15C9.2,15.2,9.3,15.4,9.3,15.7z" fill=currentColor></path>
+                      <path d="M20.3,19.3c0,0.3-0.1,0.5-0.3,0.7c-0.4,0.4-1,0.4-1.4,0L4,5.3C3.8,5.2,3.7,4.9,3.7,4.7C3.7,4.4,3.8,4.1,4,4 c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3L20,18.6C20.2,18.8,20.3,19.1,20.3,19.3z" fill=currentColor></path>
+                      <path d="M24,15.7c0,0.3-0.1,0.5-0.3,0.7c-0.4,0.4-1,0.4-1.4,0L15,9c-0.2-0.2-0.3-0.4-0.3-0.7c0-0.3,0.1-0.5,0.3-0.7 c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3l7.3,7.3C23.9,15.2,24,15.4,24,15.7z" fill=currentColor></path>
+                      <path d="M24,8.3c0,0.3-0.1,0.5-0.3,0.7l0,0c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3l-3.6-3.6 c-0.4-0.4-0.4-1,0-1.4c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3l3.6,3.6C23.9,7.8,24,8,24,8.3z" fill=currentColor></path>
+                    </svg>
+                    <span>Sirius</span>
+                  </div>
+                </div>
+                <h1 class="text-white duration-1000 transition-all delay-300 font-bold mb-8 md:mb-12 md:text-6xl sm:text-5xl text-3xl" id=h1Main>A <span class="text-sm delay-300 block duration-1000 scale-0 text-slate-500 transition-all" id=revolutionary>revolutionary</span> way to use scripts </h1>
+                <p class="leading-relaxed lg:w-4/5 text-gray-300 xl:text-lg">Sirius has yet to provide a release date. However, users are now being offered a <span class="font-bold text-slate-500">glimpse into the future of exploiting</span>. Until Sirius is fully released, those with Sirius Professional will have access to <span class="font-bold text-slate-500">rich features</span> for a handful of games. </p>
+                <hr class="border-0 bg-gray-700 h-1 my-8 rounded">
+                <div class="flex flex-col gap-2.5 lg:justify-start sm:flex-row sm:justify-center">
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 bg-slate-700 focus:ring-slate-300 group hover:bg-slate-800 max-sm:w-full" type=button onclick="document.getElementById(&#34;paymentButtons&#34;).scrollIntoView({behavior:&#34;smooth&#34;})">Buy now <svg class="transition-all -mr-1 duration-500 group-hover:translate-x-1 h-5 ml-2 w-5" viewBox="0 0 20 20" xmlns=http://www.w3.org/2000/svg fill=currentColor aria-hidden=true>
+                      <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+                    </svg>
+                  </button>
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg bg-slate-700 focus:ring-slate-300 group hover:bg-slate-800 max-sm:w-full" type=button onclick="document.getElementById(&#34;featureList&#34;).scrollIntoView({behavior:&#34;smooth&#34;})">Choose plan <svg class="stroke-2 -mr-1 ml-2 stroke-white" viewBox="0 0 10 10" fill=none aria-hidden=true height=10 width=10>
+                      <path d="M0 5h7" stroke-linecap=round stroke-linejoin=round class="duration-500 transition group-hover:opacity-100 opacity-0"></path>
+                      <path d="M1 1l4 4-4 4" stroke-linecap=round stroke-linejoin=round class="duration-500 transition group-hover:translate-x-[3px]"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- content - end -->
+              <!-- image - start -->
+              <div class="xl:w-5/12 h-48 lg:h-auto rounded-lg shadow-lg">
+                <!-- video with multiple sources -->
+                <video autoplay class="h-full w-full lazy object-cover rounded-lg" muted playsinline id=siriusShow loop>
+                  <source data-src=/assets/videos/SiriusShow.webm type=video/webm>
+                  <source data-src=/assets/videos/SiriusShow.mp4 type=video/mp4>
+                </video>
+                <!-- small caption -->
+                <p class="text-sm text-center font-medium text-gray-600">Showcasing Sirius's fast and sleek UI!</p>
+              </div>
+              <!-- image - end -->
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=max-lg:hidden id=featureList>
+      <div class="relative lg:px-8 mx-auto sm:px-6 lg:max-w-7xl max-w-2xl px-4 py-10 sm:py-20 text-center">
+        <h1 class="text-white font-extrabold sm:text-6xl text-4xl tracking-tight">
+          <span class="lg:inline block">Simple pricing,</span>
+          <span class="lg:inline block">no subscriptions.</span>
+        </h1>
+        <p class="mt-4 text-indigo-100 text-xl">Everything you need, nothing you don't. Pick a tier that best suits your interests.</p>
+      </div>
+      <div class="relative lg:px-8 mx-auto sm:px-6 backdrop-blur-sm bg-gray-900 bg-opacity-90 max-w-[100rem] py-16 rounded-xl sm:py-6">
+        <!-- xs to lg -->
+        <div class="mx-auto max-w-2xl lg:hidden space-y-16">
+          <section>
+            <div class="px-4 mb-8">
+              <h2 class="text-white font-medium leading-6 text-xl">Essential</h2>
+              <p class=mt-4>
+                <span class="text-base font-medium text-gray-300">Starting at</span>
+                <br>
+                <span class="text-gray-200 font-extrabold text-4xl">$6.99</span>
+                <sub class="text-base text-gray-500">1</sub>
+              </p>
+              <p class="text-sm text-gray-300 mt-4">Sirius Essential is the best value with Sirius, it includes some basic features to improve your experience.</p>
+              <button class="text-sm text-white text-center w-full bg-gray-800 block border border-gray-800 font-semibold py-2 rounded-md hover:bg-gray-700 mt-6" type=button>Buy Essential</button>
+              <p class="text-sm text-gray-600 py-4">
+                <sup>1</sup> All prices are lifetime. Price depends on the purchase method you choose.
+              </p>
+            </div>
+            <table class=w-full>
+              <caption class="text-sm text-left px-4 bg-gray-800 border-gray-700 border-t font-medium py-3 text-white">Features</caption>
+              <tbody class="divide-gray-700 divide-y">
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Sirius Key System Bypass</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Exclusive Game Scripts</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>WatchTower Cheater Detection Engine</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Game Moderator Detection</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Rayfield Interface Suite Perks</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Themes</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Custom Scripts</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class=w-full>
+              <caption class="text-sm text-left px-4 bg-gray-800 border-gray-700 border-t font-medium py-3 text-white">Support</caption>
+              <tbody class="divide-gray-700 divide-y">
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Basic Tickets Support</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Priority Tickets Support</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class=w-full>
+              <caption class="text-sm text-left px-4 bg-gray-800 border-gray-700 border-t font-medium py-3 text-white">Discord Perks</caption>
+              <tbody class="divide-gray-700 divide-y">
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Access to Essential channels</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Access to Professional channels</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Essential roles</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Professional roles</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="border-gray-700 border-t px-4 pt-5">
+              <button class="text-sm text-white text-center w-full bg-gray-800 block border border-gray-800 font-semibold py-2 rounded-md hover:bg-gray-900" type=button>Buy Essential</button>
+            </div>
+          </section>
+          <section>
+            <div class="px-4 mb-8">
+              <h2 class="text-white font-medium leading-6 text-xl">Professional</h2>
+              <p class=mt-4>
+                <span class="text-base font-medium text-gray-300">Starting at</span>
+                <br>
+                <span class="text-gray-200 font-extrabold text-4xl">$13.99</span>
+                <sub class="text-base text-gray-500">1</sub>
+              </p>
+              <p class="text-sm text-gray-300 mt-4">Sirius Pro is the top tier, no compromise version of Sirius, that will impress you every time you boot it up.</p>
+              <button class="text-sm text-white text-center w-full bg-gray-800 block border border-gray-800 font-semibold py-2 rounded-md hover:bg-gray-700 mt-6" type=button>Buy Professional</button>
+              <p class="text-sm text-gray-600 py-4">
+                <sup>1</sup> All prices are lifetime. Price depends on the purchase method you choose.
+              </p>
+            </div>
+            <table class=w-full>
+              <caption class="text-sm text-left px-4 bg-gray-800 border-gray-700 border-t font-medium py-3 text-white">Features</caption>
+              <tbody class="divide-gray-700 divide-y">
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Sirius Key System Bypass</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Exclusive Game Scripts</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>WatchTower Cheater Detection Engine</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Game Moderator Detection</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Rayfield Interface Suite Perks</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Themes</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Custom Scripts</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class=w-full>
+              <caption class="text-sm text-left px-4 bg-gray-800 border-gray-700 border-t font-medium py-3 text-white">Support</caption>
+              <tbody class="divide-gray-700 divide-y">
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Basic Tickets Support</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Priority Tickets Support</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class=w-full>
+              <caption class="text-sm text-left px-4 bg-gray-800 border-gray-700 border-t font-medium py-3 text-white">Discord Perks</caption>
+              <tbody class="divide-gray-700 divide-y">
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Access to Essential channels</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Access to Professional channels</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Essential roles</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="border-gray-700 border-t">
+                  <th class="py-5 font-normal text-left text-sm px-4 text-gray-500" scope=row>Professional roles</th>
+                  <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                    <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                      <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="border-gray-700 border-t px-4 pt-5">
+              <button class="text-sm text-white text-center w-full bg-gray-800 block border border-gray-800 font-semibold py-2 rounded-md hover:bg-gray-900" type=button>Buy Professional</button>
+            </div>
+          </section>
+        </div>
+        <!-- lg+ -->
+        <div class="hidden lg:block">
+          <table class="h-px table-fixed w-full">
+            <thead>
+              <tr>
+                <th class="text-sm text-left px-6 font-medium text-gray-200 pb-4" scope=col>
+                  <span>Tiers</span>
+                </th>
+                <th class="text-gray-200 font-medium px-6 text-left pb-4 leading-6 text-lg w-1/4" scope=col>Essential</th>
+                <th class="text-gray-200 font-medium px-6 text-left pb-4 leading-6 text-lg w-1/4" scope=col>Professional</th>
+              </tr>
+            </thead>
+            <tbody class="border-gray-700 border-t divide-gray-700 divide-y">
+              <tr>
+                <th class="text-sm text-left px-6 font-medium text-gray-200 align-top py-8" scope=row>Pricing</th>
+                <td class="h-full align-top px-6 py-8">
+                  <div class="h-full relative table">
+                    <p>
+                      <span class="text-base font-medium text-gray-400">Starting at</span>
+                      <br>
+                      <span class="text-gray-200 font-extrabold text-4xl">$6.99</span>
+                      <sub class=text-gray-500>1</sub>
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4 mt-4">Sirius Essential is the best value with Sirius, it includes some basic features to improve your experience.</p>
+                    <button class="text-sm text-white text-center w-full bg-gray-800 block border border-gray-800 font-semibold py-2 rounded-md hover:bg-gray-700 5 flex-grow" onclick="document.getElementById(&#34;paymentButtons&#34;).scrollIntoView({behavior:&#34;smooth&#34;})">Buy Essential</button>
+                  </div>
+                </td>
+                <td class="h-full align-top px-6 py-8">
+                  <div class="h-full relative table">
+                    <p>
+                      <span class="text-base font-medium text-gray-400">Starting at</span>
+                      <br>
+                      <span class="text-gray-200 font-extrabold text-4xl">$13.99</span>
+                      <sub class=text-gray-500>1</sub>
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4 mt-4">Sirius Pro is the top tier, no compromise version of Sirius, that will impress you every time you boot it up.</p>
+                    <button class="text-sm text-white text-center w-full bg-gray-800 block border border-gray-800 font-semibold py-2 rounded-md hover:bg-gray-700 5 flex-grow" onclick="document.getElementById(&#34;paymentButtons&#34;).scrollIntoView({behavior:&#34;smooth&#34;})">Buy Professional</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="h-full align-top px-6 py-8" colspan=2 scope=colgroup>
+                  <p class="text-sm text-gray-500">
+                    <sup>1</sup> All prices are lifetime. Price depends on the purchase method you choose.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-sm text-left font-medium bg-gray-800 py-3 text-white pl-6" scope=colgroup colspan=3>Features</th>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Sirius Key System Bypass</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Exclusive Game Scripts</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>WatchTower Cheater Detection Engine</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Game Moderator Detection</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Rayfield Interface Suite Perks</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Themes</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Custom Scripts</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-sm text-left font-medium bg-gray-800 py-3 text-white pl-6" scope=colgroup colspan=3>Support</th>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Basic Tickets Support</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Priority Tickets Support</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="text-sm text-left font-medium bg-gray-800 py-3 text-white pl-6" scope=colgroup colspan=3>Discord Perks</th>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Access to Essential channels</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Access to Professional channels</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Essential roles</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-5 px-6 font-normal text-gray-300 text-left text-sm" scope=row>Professional roles</th>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M20 12H4" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+                <td class="py-5 px-6 max-lg:flex max-lg:justify-end">
+                  <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg fill=none stroke=currentColor stroke-width=2>
+                    <path d="M5 13l4 4L19 7" stroke-linecap=round stroke-linejoin=round></path>
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot id=paymentButtons>
+              <tr class="border-gray-700 border-t">
+                <th class=sr-only scope=row>Pay with</th>
+                <td class="pt-5 px-6">
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#635BFF] focus:ring-[#635BFF]/50 hover:bg-[#635BFF]/80" type=button>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=stripe data-prefix=fab focusable=false role=img>
+                      <path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z" fill=currentColor></path>
+                    </svg> Pay with Stripe </button>
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#FF9119] focus:ring-[#FF9119]/50 hover:bg-[#FF9119]/80" type=button>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 512 512" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=bitcoin data-prefix=fab focusable=false role=img>
+                      <path d="M504 256c0 136.1-111 248-248 248S8 392.1 8 256 119 8 256 8s248 111 248 248zm-141.7-35.33c4.937-32.1-20.19-50.74-54.55-62.57l11.15-44.7-27.21-6.781-10.85 43.52c-7.154-1.783-14.5-3.464-21.8-5.13l10.93-43.81-27.2-6.781-11.15 44.69c-5.922-1.349-11.73-2.682-17.38-4.084l.031-.14-37.53-9.37-7.239 29.06s20.19 4.627 19.76 4.913c11.02 2.751 13.01 10.04 12.68 15.82l-12.7 50.92c.76 .194 1.744 .473 2.829 .907-.907-.225-1.876-.473-2.876-.713l-17.8 71.34c-1.349 3.348-4.767 8.37-12.47 6.464 .271 .395-19.78-4.937-19.78-4.937l-13.51 31.15 35.41 8.827c6.588 1.651 13.05 3.379 19.4 5.006l-11.26 45.21 27.18 6.781 11.15-44.73a1038 1038 0 0 0 21.69 5.627l-11.11 44.52 27.21 6.781 11.26-45.13c46.4 8.781 81.3 5.239 95.99-36.73 11.84-33.79-.589-53.28-25-65.99 17.78-4.098 31.17-15.79 34.75-39.95zm-62.18 87.18c-8.41 33.79-65.31 15.52-83.75 10.94l14.94-59.9c18.45 4.603 77.6 13.72 68.81 48.96zm8.417-87.67c-7.673 30.74-55.03 15.12-70.39 11.29l13.55-54.33c15.36 3.828 64.84 10.97 56.85 43.03z" fill=currentColor></path>
+                    </svg> Pay with Bitcoin </button>
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#00C244] focus:ring-[#00C244]/50 hover:bg-[#00C244]/90" type=button>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=cashapp data-prefix=fab focusable=false role=img>
+                      <path d="M23.59 3.475a5.1 5.1 0 00-3.05-3.05c-1.31-.42-2.5-.42-4.92-.42H8.36c-2.4 0-3.61 0-4.9.4a5.1 5.1 0 00-3.05 3.06C0 4.765 0 5.965 0 8.365v7.27c0 2.41 0 3.6.4 4.9a5.1 5.1 0 003.05 3.05c1.3.41 2.5.41 4.9.41h7.28c2.41 0 3.61 0 4.9-.4a5.1 5.1 0 003.06-3.06c.41-1.3.41-2.5.41-4.9v-7.25c0-2.41 0-3.61-.41-4.91zm-6.17 4.63l-.93.93a.5.5 0 01-.67.01 5 5 0 00-3.22-1.18c-.97 0-1.94.32-1.94 1.21 0 .9 1.04 1.2 2.24 1.65 2.1.7 3.84 1.58 3.84 3.64 0 2.24-1.74 3.78-4.58 3.95l-.26 1.2a.49.49 0 01-.48.39H9.63l-.09-.01a.5.5 0 01-.38-.59l.28-1.27a6.54 6.54 0 01-2.88-1.57v-.01a.48.48 0 010-.68l1-.97a.49.49 0 01.67 0c.91.86 2.13 1.34 3.39 1.32 1.3 0 2.17-.55 2.17-1.42 0-.87-.88-1.1-2.54-1.72-1.76-.63-3.43-1.52-3.43-3.6 0-2.42 2.01-3.6 4.39-3.71l.25-1.23a.48.48 0 01.48-.38h1.78l.1.01c.26.06.43.31.37.57l-.27 1.37c.9.3 1.75.77 2.48 1.39l.02.02c.19.2.19.5 0 .68z" fill=currentColor></path>
+                    </svg> Pay with CashApp </button>
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#00457C] focus:ring-[#00457C]/50 hover:bg-[#00457C]/90" type=button>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=paypal data-prefix=fab focusable=false role=img>
+                      <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z" fill=currentColor></path>
+                    </svg> Pay with PayPal </button>
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#A38A00] focus:ring-[#A38A00]/50 hover:bg-[#A38A00]/90 invisible" type=button aria-disabled=true disabled=disabled>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=paypal data-prefix=fab focusable=false role=img>
+                      <path d="M20.7,4.2c1.5,0.9,2.4,2.4,2.4,4.1v7.2c0,1.7-0.9,3.3-2.4,4.1l-6.2,3.6 c-1.5,0.9-3.3,0.9-4.8,0l-6.3-3.6C1.9,18.9,1,17.3,1,15.6V8.4c0-1.7,0.9-3.3,2.4-4.1l6.2-3.6c1.5-0.9,3.3-0.9,4.8,0L20.7,4.2z M10.5,2.3L4.4,5.8c-1,0.6-1.6,1.6-1.6,2.7v7c0,1.1,0.6,2.1,1.6,2.7l6.1,3.5c1,0.6,2.1,0.6,3.1,0l6.1-3.5c1-0.6,1.6-1.6,1.6-2.7 v-7c0-1.1-0.6-2.1-1.6-2.7l-6.1-3.5C12.6,1.7,11.4,1.7,10.5,2.3z M13.3,4.2L18.1,7c0.8,0.5,1.3,1.3,1.3,2.2v5.6 c0,0.9-0.5,1.8-1.3,2.2l-4.8,2.8c-0.8,0.5-1.8,0.5-2.6,0L5.9,17c-0.8-0.5-1.3-1.3-1.3-2.2V9.2c0-0.9,0.5-1.8,1.3-2.2l4.8-2.8 C11.5,3.8,12.5,3.8,13.3,4.2z M9.2,14.7h5.5V9.2H9.2V14.7z" fill=currentColor></path>
+                    </svg> Pay with Robux </button>
+                </td>
+                <td class="pt-5 px-6">
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#635BFF] focus:ring-[#635BFF]/50 hover:bg-[#635BFF]/80" type=button>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=stripe data-prefix=fab focusable=false role=img>
+                      <path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z" fill=currentColor></path>
+                    </svg> Pay with Stripe </button>
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#FF9119] focus:ring-[#FF9119]/50 hover:bg-[#FF9119]/80" type=button>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 512 512" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=bitcoin data-prefix=fab focusable=false role=img>
+                      <path d="M504 256c0 136.1-111 248-248 248S8 392.1 8 256 119 8 256 8s248 111 248 248zm-141.7-35.33c4.937-32.1-20.19-50.74-54.55-62.57l11.15-44.7-27.21-6.781-10.85 43.52c-7.154-1.783-14.5-3.464-21.8-5.13l10.93-43.81-27.2-6.781-11.15 44.69c-5.922-1.349-11.73-2.682-17.38-4.084l.031-.14-37.53-9.37-7.239 29.06s20.19 4.627 19.76 4.913c11.02 2.751 13.01 10.04 12.68 15.82l-12.7 50.92c.76 .194 1.744 .473 2.829 .907-.907-.225-1.876-.473-2.876-.713l-17.8 71.34c-1.349 3.348-4.767 8.37-12.47 6.464 .271 .395-19.78-4.937-19.78-4.937l-13.51 31.15 35.41 8.827c6.588 1.651 13.05 3.379 19.4 5.006l-11.26 45.21 27.18 6.781 11.15-44.73a1038 1038 0 0 0 21.69 5.627l-11.11 44.52 27.21 6.781 11.26-45.13c46.4 8.781 81.3 5.239 95.99-36.73 11.84-33.79-.589-53.28-25-65.99 17.78-4.098 31.17-15.79 34.75-39.95zm-62.18 87.18c-8.41 33.79-65.31 15.52-83.75 10.94l14.94-59.9c18.45 4.603 77.6 13.72 68.81 48.96zm8.417-87.67c-7.673 30.74-55.03 15.12-70.39 11.29l13.55-54.33c15.36 3.828 64.84 10.97 56.85 43.03z" fill=currentColor></path>
+                    </svg> Pay with Bitcoin </button>
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#00C244] focus:ring-[#00C244]/50 hover:bg-[#00C244]/90" type=button>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=cashapp data-prefix=fab focusable=false role=img>
+                      <path d="M23.59 3.475a5.1 5.1 0 00-3.05-3.05c-1.31-.42-2.5-.42-4.92-.42H8.36c-2.4 0-3.61 0-4.9.4a5.1 5.1 0 00-3.05 3.06C0 4.765 0 5.965 0 8.365v7.27c0 2.41 0 3.6.4 4.9a5.1 5.1 0 003.05 3.05c1.3.41 2.5.41 4.9.41h7.28c2.41 0 3.61 0 4.9-.4a5.1 5.1 0 003.06-3.06c.41-1.3.41-2.5.41-4.9v-7.25c0-2.41 0-3.61-.41-4.91zm-6.17 4.63l-.93.93a.5.5 0 01-.67.01 5 5 0 00-3.22-1.18c-.97 0-1.94.32-1.94 1.21 0 .9 1.04 1.2 2.24 1.65 2.1.7 3.84 1.58 3.84 3.64 0 2.24-1.74 3.78-4.58 3.95l-.26 1.2a.49.49 0 01-.48.39H9.63l-.09-.01a.5.5 0 01-.38-.59l.28-1.27a6.54 6.54 0 01-2.88-1.57v-.01a.48.48 0 010-.68l1-.97a.49.49 0 01.67 0c.91.86 2.13 1.34 3.39 1.32 1.3 0 2.17-.55 2.17-1.42 0-.87-.88-1.1-2.54-1.72-1.76-.63-3.43-1.52-3.43-3.6 0-2.42 2.01-3.6 4.39-3.71l.25-1.23a.48.48 0 01.48-.38h1.78l.1.01c.26.06.43.31.37.57l-.27 1.37c.9.3 1.75.77 2.48 1.39l.02.02c.19.2.19.5 0 .68z" fill=currentColor></path>
+                    </svg> Pay with CashApp </button>
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#00457C] focus:ring-[#00457C]/50 hover:bg-[#00457C]/90" type=button>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=paypal data-prefix=fab focusable=false role=img>
+                      <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z" fill=currentColor></path>
+                    </svg> Pay with PayPal </button>
+                  <button class="text-sm text-white font-medium items-center text-center focus:outline-none focus:ring-4 inline-flex px-5 py-2.5 rounded-lg mr-2 mb-2 w-full bg-[#A38A00] focus:ring-[#A38A00]/50 hover:bg-[#A38A00]/90" type=button>
+                    <svg class="h-4 w-4 -ml-1 mr-2" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg aria-hidden=true data-icon=paypal data-prefix=fab focusable=false role=img>
+                      <path d="M20.7,4.2c1.5,0.9,2.4,2.4,2.4,4.1v7.2c0,1.7-0.9,3.3-2.4,4.1l-6.2,3.6 c-1.5,0.9-3.3,0.9-4.8,0l-6.3-3.6C1.9,18.9,1,17.3,1,15.6V8.4c0-1.7,0.9-3.3,2.4-4.1l6.2-3.6c1.5-0.9,3.3-0.9,4.8,0L20.7,4.2z M10.5,2.3L4.4,5.8c-1,0.6-1.6,1.6-1.6,2.7v7c0,1.1,0.6,2.1,1.6,2.7l6.1,3.5c1,0.6,2.1,0.6,3.1,0l6.1-3.5c1-0.6,1.6-1.6,1.6-2.7 v-7c0-1.1-0.6-2.1-1.6-2.7l-6.1-3.5C12.6,1.7,11.4,1.7,10.5,2.3z M13.3,4.2L18.1,7c0.8,0.5,1.3,1.3,1.3,2.2v5.6 c0,0.9-0.5,1.8-1.3,2.2l-4.8,2.8c-0.8,0.5-1.8,0.5-2.6,0L5.9,17c-0.8-0.5-1.3-1.3-1.3-2.2V9.2c0-0.9,0.5-1.8,1.3-2.2l4.8-2.8 C11.5,3.8,12.5,3.8,13.3,4.2z M9.2,14.7h5.5V9.2H9.2V14.7z" fill=currentColor></path>
+                    </svg> Pay with Robux </button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="max-lg:hidden md:px-96 md:py-8 p-4 rounded-lg shadow">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a class="flex items-center sm:mb-0 mb-4" href=https://discord.gg/sirius target=_blank>
+          <img alt="Sirius Logo" class="mr-3 h-8" src=/assets/images/svg/logo.svg>
+          <span class="text-white font-semibold self-center text-2xl whitespace-nowrap">Sirius</span>
+        </a>
+        <div class="text-sm text-gray-400 flex flex-wrap items-center mb-6 sm:mb-0">
+          <a class="hover:underline md:mr-6 mr-4" href=https://www.youtube.com/channel/UCA_K-7-vot6vc711JoU8fAg>
+            <svg class="h-5 w-5" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg>
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill=currentColor></path>
+            </svg>
+          </a>
+          <a class="hover:underline md:mr-6 mr-4" href=https://twitter.com/SiriusRoblox>
+            <svg class="h-5 w-5" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg>
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" fill=currentColor></path>
+            </svg>
+          </a>
+          <a class="hover:underline md:mr-6 mr-4" href=https://www.tiktok.com/@sirius.software>
+            <svg class="h-5 w-5" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg>
+              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" fill=currentColor></path>
+            </svg>
+          </a>
+          <a class=hover:underline href=https://discord.gg/sirius>
+            <svg class="h-5 w-5" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg>
+              <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" fill=currentColor></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <hr class="border-gray-700 lg:my-4 my-2 sm:mx-auto">
+      <span class="text-sm text-gray-400 block sm:text-center">© 2022 <a class=hover:underline href=https://discord.gg/sirius target=_blank>Sirius</a>. All Rights Reserved. </span>
+    </footer>
+  </body>
+</html>
